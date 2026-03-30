@@ -107,6 +107,6 @@ Passionate about building secure, user-centric software and contributing to coll
 
 ## Link for my mock interview
 
--
+- https://github.com/NuyraSwanson/Github-Portfolio/blob/main/Mock%20interview.mp4
  
 
