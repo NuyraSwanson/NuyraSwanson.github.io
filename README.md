@@ -1,9 +1,6 @@
 # Nuyra Swanson                                                                                     
 
 
-<img width="321" height="265" alt="image" src="https://github.com/user-attachments/assets/980026b4-83c8-46c3-b911-db28f23c51c0" />
-
-
 ## ICT: Application Development Student
 
 📍 Cape Town, South Africa
