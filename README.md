@@ -105,5 +105,50 @@ Passionate about building secure, user-centric software and contributing to coll
 ## Link for my mock interview
 
 - https://github.com/NuyraSwanson/Github-Portfolio/blob/main/Mock%20interview.mp4
+
+## Reflection on Coding in Markdown (STAR Method)
+
+**Situation:**  
+I was required to create my CV and GitHub portfolio using Markdown, which was a new way of structuring and presenting content for me.
+
+**Task:**  
+My task was to convert my CV into Markdown format while ensuring it remained clear, well-structured, and professional.
+
+**Action:**  
+I learned how to use Markdown syntax, such as headings, lists, and formatting, to organise my content effectively. I focused on making the layout clean and readable while maintaining the professional structure of a CV.
+
+**Result:**  
+Through this process, I improved my ability to present information in a structured and developer-friendly format. I now understand how Markdown is used in real-world development environments, especially for documentation and GitHub repositories.
+
+## Reflection on Mock Interview Video (STAR Method)
+
+**Situation:**  
+I was required to record a mock interview video to simulate a real job interview scenario.
+
+**Task:**  
+My task was to present myself professionally, communicate my skills clearly, and answer interview-style questions confidently within a limited time.
+
+**Action:**  
+I prepared my responses by focusing on my skills, projects, and career goals. I practiced speaking clearly and maintaining a natural tone instead of memorising answers. I also ensured that my presentation, background, and delivery were appropriate for a professional setting.
+
+**Result:**  
+This experience helped me improve my confidence and communication skills. I became more comfortable speaking about my abilities and presenting myself in a professional manner, which will be valuable in real job interviews.
+
+## Reflection on GitHub Pages (STAR Method)
+
+**Situation:**  
+I was required to publish my portfolio using GitHub Pages to showcase my work online.
+
+**Task:**  
+My task was to deploy my GitHub repository as a live website and ensure that all components, including my CV and mock interview video, were accessible and properly displayed.
+
+**Action:**  
+I set up GitHub Pages and linked it to my repository. I ensured that my README file was correctly formatted and that all links and embedded content worked as expected.
+
+**Result:**  
+I successfully created a live portfolio that can be shared with others. This helped me understand how developers showcase their work online and improved my confidence in using GitHub as a professional tool.
+
+
+
  
 
