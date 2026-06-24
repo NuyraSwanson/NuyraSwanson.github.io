@@ -105,7 +105,8 @@ Passionate about building secure, user-centric software and contributing to coll
 ## Mock Interview Video
 
 <video width="700" controls>
-  <source src="Mock interview.mp4" type="video/mp4">
+  <source src="./Mock%20interview.mp4" type="video/mp4">
+  Your browser does not support the video tag.
 </video>
 
 ## Reflection on Coding in Markdown (STAR Method)
