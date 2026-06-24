@@ -102,9 +102,11 @@ Passionate about building secure, user-centric software and contributing to coll
 | Mrs. Ester Nel | Clinical Nurse Practitioner | +27 74 255 1209 |
 | Ms. M Marais | CPUT Health Department | +27 60 6339 557 |
 
-## Link for my mock interview
+## Mock Interview Video
 
-- https://github.com/NuyraSwanson/Github-Portfolio/blob/main/Mock%20interview.mp4
+<video width="700" controls>
+  <source src="Mock interview.mp4" type="video/mp4">
+</video>
 
 ## Reflection on Coding in Markdown (STAR Method)
 
