@@ -109,7 +109,8 @@ Passionate about building secure, user-centric software and contributing to coll
 ---
 
 ## Demo Video
-[Watch Mock Interview Video](./Mock%20interview.mp4)
+https://github.com/user-attachments/assets/010ae0ee-59dd-44f7-bfcd-3cebe5f3585a
+
 
 ## Reflection on Coding in Markdown (STAR Method)
 
