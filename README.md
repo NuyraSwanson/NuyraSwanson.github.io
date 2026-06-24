@@ -1,3 +1,16 @@
+# Digital Portfolio
+
+## Navigation
+
+- [Professional Profile](#professional-profile)
+- [Education](#education)
+- [Technical Skills](#technical-skills)
+- [Projects](#academic-and-personal-projects)
+- [Mock Interview Video](#mock-interview-video)
+- [Reflection on Markdown](#reflection-on-coding-in-markdown-star-method)
+- [Reflection on Mock Interview](#reflection-on-mock-interview-video-star-method)
+- [Reflection on GitHub Pages](#reflection-on-github-pages-star-method)
+
 # Nuyra Swanson                                                                                     
 
 
@@ -84,7 +97,7 @@ Passionate about building secure, user-centric software and contributing to coll
 - Created a responsive portfolio showcasing projects and skills
 - Focused on clean layout, usability, and interactive front-end features
 
-### Employee Management System
+### Quiz
 *Java, OOP, Inheritance, Polymorphism*
 
 - Developed a console-based quiz system using multiple interfaces to define question behaviours
@@ -94,13 +107,6 @@ Passionate about building secure, user-centric software and contributing to coll
 
 
 ---
-
-## References
-
-| Name | Position | Contact |
-|------|----------|---------|
-| Mrs. Ester Nel | Clinical Nurse Practitioner | +27 74 255 1209 |
-| Ms. M Marais | CPUT Health Department | +27 60 6339 557 |
 
 ## Demo Video
 [Watch Mock Interview Video](./Mock%20interview.mp4)
