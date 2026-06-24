@@ -11,6 +11,14 @@
 - [Reflection on Mock Interview](#reflection-on-mock-interview-video-star-method)
 - [Reflection on GitHub Pages](#reflection-on-github-pages-star-method)
 
+## GitHub Student Account Evidence
+
+I applied for and was approved for the GitHub Student Developer Pack using my CPUT student email address. This was used throughout the project to support development and version control activities.
+
+GitHub Username: NuyraSwanson
+
+![GitHub Education Pack Confirmation](GithubAccount-screenshot.jpeg)
+
 # Nuyra Swanson                                                                                     
 
 
