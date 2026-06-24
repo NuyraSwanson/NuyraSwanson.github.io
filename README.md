@@ -97,7 +97,7 @@ Passionate about building secure, user-centric software and contributing to coll
 - Created a responsive portfolio showcasing projects and skills
 - Focused on clean layout, usability, and interactive front-end features
 
-### Quiz
+### Interactive Quiz Application
 *Java, OOP, Inheritance, Polymorphism*
 
 - Developed a console-based quiz system using multiple interfaces to define question behaviours
