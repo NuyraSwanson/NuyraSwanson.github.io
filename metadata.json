@@ -1,0 +1,6 @@
+{
+  "name": "Nuyra Swanson Portfolio",
+  "description": "Personal developer portfolio and interactive Markdown showcase for Nuyra Swanson, ICT Application Development student at CPUT.",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
