@@ -52,6 +52,24 @@ function initNavigation() {
       }
     });
 
+    // Compact mobile subnav items
+    document.querySelectorAll('#compact-subnav .subnav-item').forEach(el => {
+      const elTarget = el.getAttribute('data-nav-target');
+      if (elTarget === 'careconnect') {
+        if (targetId === 'careconnect') {
+          el.className = 'subnav-item shrink-0 px-2.5 py-1 rounded-lg text-teal-900 bg-teal-100 border border-teal-300 font-bold shadow-2xs flex items-center gap-1';
+        } else {
+          el.className = 'subnav-item shrink-0 px-2.5 py-1 rounded-lg text-teal-800 bg-teal-50 border border-teal-200/80 font-semibold flex items-center gap-1';
+        }
+      } else {
+        if (elTarget === targetId) {
+          el.className = 'subnav-item shrink-0 px-2.5 py-1 rounded-lg text-sky-600 bg-sky-50 border border-sky-200/60 font-bold shadow-2xs';
+        } else {
+          el.className = 'subnav-item shrink-0 px-2.5 py-1 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 font-medium';
+        }
+      }
+    });
+
     // Mobile items
     if (mobileMenu) {
       mobileMenu.querySelectorAll('[data-nav-target]').forEach(el => {

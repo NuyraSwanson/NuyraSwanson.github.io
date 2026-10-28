@@ -18,9 +18,34 @@ code, pre, .font-mono {
   font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
-/* Critical utility fallbacks ensuring zero layout collapse */
+/* Utility fallbacks */
 .hidden {
+  display: none;
+}
+
+/* Strictly hide modal and tab panels when they have .hidden */
+#lightbox-modal.hidden,
+#code-snippet-modal.hidden,
+#toast.hidden,
+#view-markdown.hidden,
+.cc-tab-panel.hidden {
   display: none !important;
+}
+
+/* Force main-nav flex display on md+ screens regardless of cascade */
+@media (min-width: 768px) {
+  nav#main-nav {
+    display: flex !important;
+  }
+}
+
+/* Hide scrollbar for compact nav scroll strip */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Custom subtle scrollbar */

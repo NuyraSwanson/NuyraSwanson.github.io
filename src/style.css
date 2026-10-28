@@ -10,6 +10,22 @@
   }
 }
 
+/* Force main-nav flex display on md+ screens */
+@media (min-width: 768px) {
+  nav#main-nav {
+    display: flex !important;
+  }
+}
+
+/* Hide scrollbars for pill navigation */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Custom subtle scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
