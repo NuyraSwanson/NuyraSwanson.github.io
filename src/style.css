@@ -26,11 +26,17 @@
   background: #94a3b8;
 }
 
+/* Section scroll offset so sticky navbar does not overlap headers */
+section, [id^="section-"] {
+  scroll-margin-top: 5rem;
+}
+
 /* Light styling utilities */
 .glass-nav {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
 }
 
 .card-hover {

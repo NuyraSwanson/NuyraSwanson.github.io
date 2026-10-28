@@ -22,46 +22,147 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // -------------------------------------------------------------
-// 1. NAVIGATION & SCROLLING
+// 1. NAVIGATION, SCROLLSPY & MOBILE MENU
 // -------------------------------------------------------------
 function initNavigation() {
-  const navButtons = document.querySelectorAll('[data-nav-target]');
+  const navLinks = document.querySelectorAll('[data-nav-target]');
   const mobileMenuBtn = document.getElementById('btn-mobile-menu');
   const mobileMenu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-menu-open');
+  const iconClose = document.getElementById('icon-menu-close');
 
-  navButtons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const targetId = btn.getAttribute('data-nav-target');
-      
-      // Ensure we are in website view
+  function setActiveNavLink(targetId) {
+    if (!targetId) return;
+
+    // Desktop items
+    document.querySelectorAll('#main-nav .nav-item').forEach(el => {
+      const elTarget = el.getAttribute('data-nav-target');
+      if (elTarget === 'careconnect') {
+        if (targetId === 'careconnect') {
+          el.className = 'nav-item px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5 text-teal-900 bg-teal-100 font-bold border border-teal-300 shadow-xs';
+        } else {
+          el.className = 'nav-item px-3 py-1.5 rounded-lg hover:text-teal-900 hover:bg-teal-50 transition-all flex items-center gap-1.5 text-teal-700 bg-teal-50/70 font-semibold border border-teal-200/60';
+        }
+      } else {
+        if (elTarget === targetId) {
+          el.className = 'nav-item px-3 py-1.5 rounded-lg transition-all font-bold text-sky-600 bg-sky-50 shadow-xs border border-sky-100';
+        } else {
+          el.className = 'nav-item px-3 py-1.5 rounded-lg hover:text-slate-900 hover:bg-slate-100 transition-all font-medium text-slate-600 border border-transparent';
+        }
+      }
+    });
+
+    // Mobile items
+    if (mobileMenu) {
+      mobileMenu.querySelectorAll('[data-nav-target]').forEach(el => {
+        const elTarget = el.getAttribute('data-nav-target');
+        if (elTarget === targetId) {
+          el.classList.add('font-bold', 'text-sky-600', 'bg-sky-50');
+          el.classList.remove('text-slate-700', 'hover:bg-slate-50');
+        } else {
+          el.classList.remove('font-bold', 'text-sky-600', 'bg-sky-50');
+          if (elTarget !== 'careconnect') {
+            el.classList.add('text-slate-700', 'hover:bg-slate-50');
+          }
+        }
+      });
+    }
+  }
+
+  // Click handler for all navigation buttons and links
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const targetId = link.getAttribute('data-nav-target');
+      if (!targetId) return;
+
+      e.preventDefault();
+
+      // Ensure we are in website view mode
       switchViewMode('web');
-      
+
       const targetElement = document.getElementById(`section-${targetId}`);
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: 'smooth' });
+        if (history.pushState) {
+          history.pushState(null, '', `#section-${targetId}`);
+        }
       }
 
-      // Update active nav styles
-      document.querySelectorAll('#main-nav .nav-item').forEach(el => {
-        el.classList.remove('text-sky-600', 'bg-sky-50/70', 'font-semibold');
-      });
-      const matchingDesktopBtn = document.querySelector(`#main-nav [data-nav-target="${targetId}"]`);
-      if (matchingDesktopBtn && targetId !== 'careconnect') {
-        matchingDesktopBtn.classList.add('text-sky-600', 'bg-sky-50/70', 'font-semibold');
-      }
+      setActiveNavLink(targetId);
 
-      if (mobileMenu) {
-        mobileMenu.classList.add('hidden');
+      // Close mobile menu if open
+      if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+        closeMobileMenu();
       }
     });
   });
 
-  if (mobileMenuBtn && mobileMenu) {
-    mobileMenuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+  // Mobile menu open / close helpers
+  function openMobileMenu() {
+    if (!mobileMenu) return;
+    mobileMenu.classList.remove('hidden');
+    if (iconOpen) iconOpen.classList.add('hidden');
+    if (iconClose) iconClose.classList.remove('hidden');
+  }
+
+  function closeMobileMenu() {
+    if (!mobileMenu) return;
+    mobileMenu.classList.add('hidden');
+    if (iconOpen) iconOpen.classList.remove('hidden');
+    if (iconClose) iconClose.classList.add('hidden');
+  }
+
+  function toggleMobileMenu() {
+    if (!mobileMenu) return;
+    if (mobileMenu.classList.contains('hidden')) {
+      openMobileMenu();
+    } else {
+      closeMobileMenu();
+    }
+  }
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMobileMenu();
     });
   }
+
+  // Close mobile drawer when clicking outside
+  document.addEventListener('click', (e) => {
+    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+      if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+        closeMobileMenu();
+      }
+    }
+  });
+
+  // ScrollSpy with IntersectionObserver for automatic active tab highlighting
+  const sections = ['overview', 'careconnect', 'projects', 'skills-edu', 'reflections', 'contact'];
+  const sectionElements = sections
+    .map(id => document.getElementById(`section-${id}`))
+    .filter(Boolean);
+
+  if ('IntersectionObserver' in window && sectionElements.length > 0) {
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -60% 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.id.replace('section-', '');
+          setActiveNavLink(sectionId);
+        }
+      });
+    }, observerOptions);
+
+    sectionElements.forEach(el => observer.observe(el));
+  }
 }
+
 
 // -------------------------------------------------------------
 // 2. VIEW SWITCHER (WEBSITE VS MARKDOWN)
