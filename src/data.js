@@ -9,9 +9,9 @@ export const PORTFOLIO_DATA = {
     phone: "+27 65 821 1952",
     githubUrl: "https://github.com/NuyraSwanson",
     githubUsername: "NuyraSwanson",
-    avatarImage: "/assets/aistudio/new_image_069717ee.jpeg",
-    cvDownloadPath: "/CV_Nuyra_Swanson 2026.docx",
-    githubEvidenceImage: "/GithubAccount-screenshot.jpeg",
+    avatarImage: "assets/aistudio/new_image_069717ee.jpeg",
+    cvDownloadPath: "CV_Nuyra_Swanson 2026.docx",
+    githubEvidenceImage: "GithubAccount-screenshot.jpeg",
     demoVideoUrl: "https://github.com/user-attachments/assets/010ae0ee-59dd-44f7-bfcd-3cebe5f3585a",
     careConnectLiveUrl: "https://care-connect-delta-puce.vercel.app/",
     careConnectRepoUrl: "https://github.com/PamMasina/CareConnect.git",
@@ -524,7 +524,7 @@ export const CARECONNECT_DATA = {
       id: "screen-01",
       title: "Desktop Landing Page & Hero Portal",
       caption: "Public homepage showcasing 'Dignified Healthcare Access for Every Cape Town Resident', Table Bay Community Health Centre showcase, clinic search bar, and primary navigation.",
-      imagePath: "/assets/aistudio/image_61a64337.png",
+      imagePath: "assets/aistudio/image_61a64337.png",
       badge: "Public Portal",
       examinerInsight: "Demonstrates accessibility-first layout, clear call-to-action for community residents, and search filtering."
     },
@@ -532,7 +532,7 @@ export const CARECONNECT_DATA = {
       id: "screen-02",
       title: "Book Clinic Appointment (Step 1 of 4)",
       caption: "Interactive 4-step booking workflow showing patient Nuyra selecting primary healthcare clinics: Langa CHC, Khayelitsha, Mitchells Plain CDC, Gugulethu CHC, Cape Town CBD.",
-      imagePath: "/assets/aistudio/image_c2cd458b.png",
+      imagePath: "assets/aistudio/image_c2cd458b.png",
       badge: "Patient Booking",
       examinerInsight: "Shows multi-step form architecture, clinic distance indicators (2.1km, 4.8km), operating hours, and authenticated patient session."
     },
@@ -540,7 +540,7 @@ export const CARECONNECT_DATA = {
       id: "screen-03",
       title: "Priority Medical Channel Emergency SOS Dispatch",
       caption: "Emergency triage selector featuring breathing difficulty, chest pain, injury/accident, unconscious/seizure, maternal & delivery, with direct 10177 and 112 emergency routing.",
-      imagePath: "/assets/aistudio/image_d7adbc91.png",
+      imagePath: "assets/aistudio/image_d7adbc91.png",
       badge: "Emergency SOS",
       examinerInsight: "Critical life-safety feature engineered with priority medical routing, condition categorization, and immediate dispatch."
     },
@@ -548,7 +548,7 @@ export const CARECONNECT_DATA = {
       id: "screen-04",
       title: "Live Queue Waiting Room & Realtime Ticket",
       caption: "Real-time queue tracking showing '0 - You are next in line! Checked in at 7:36:56 PM' assigned to Consultation Room 4 with estimated 2 mins wait time.",
-      imagePath: "/assets/aistudio/image_f35d9165.png",
+      imagePath: "assets/aistudio/image_f35d9165.png",
       badge: "Realtime Queue",
       examinerInsight: "Validates Supabase Realtime WebSocket synchronization, eliminating anxiety in crowded physical clinic waiting rooms."
     },
@@ -556,7 +556,7 @@ export const CARECONNECT_DATA = {
       id: "screen-05",
       title: "System Administration Console (Jane Help)",
       caption: "Administrative console showing system-wide clinic analytics, user role governance, staff rosters, and emergency oversight.",
-      imagePath: "/assets/aistudio/image_fffd1e00.png",
+      imagePath: "assets/aistudio/image_fffd1e00.png",
       badge: "Admin Console",
       examinerInsight: "Proves strict Role-Based Access Control (RBAC), multi-tenant clinic management, and operational security."
     },
@@ -564,7 +564,7 @@ export const CARECONNECT_DATA = {
       id: "screen-06",
       title: "Clinical Workspace: John Smith (Nurse Console)",
       caption: "Clinical staff dashboard displaying 19 scheduled patients, 1 waiting room patient, 1 active emergency SOS, and facility status indicators.",
-      imagePath: "/assets/aistudio/image_05a9ce72.png",
+      imagePath: "assets/aistudio/image_05a9ce72.png",
       badge: "Staff Console",
       examinerInsight: "Direct evidence of clinical triage workflow, immediate SOS notifications, and patient backlog handling."
     },
@@ -572,7 +572,7 @@ export const CARECONNECT_DATA = {
       id: "screen-07",
       title: "Mobile Safari PWA View (iPhone Viewport)",
       caption: "Live PWA execution on mobile Safari showing responsive header, bottom navigation bar (Home, Clinics, Queue, Advice, SOS), and 'Book Consultation Online'.",
-      imagePath: "/assets/aistudio/IMG_3473_c8692650.png",
+      imagePath: "assets/aistudio/IMG_3473_c8692650.png",
       badge: "Mobile PWA",
       examinerInsight: "Confirms mobile-first responsiveness, thumb-zone bottom navigation bar, and standalone PWA compliance."
     }
